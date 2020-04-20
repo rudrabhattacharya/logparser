@@ -22,6 +22,9 @@ namespace Parser.Factory
                 case "hitcountbyip":
                     resolver = new HitCountByIpResolver();
                     break;
+                case "clientipcount":
+                    resolver = new ClientIPCountResolver();
+                    break;
                 case "densityperhr":
                     resolver = new TrafficDensityResolver();
                     break;

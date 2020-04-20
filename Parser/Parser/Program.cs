@@ -20,7 +20,7 @@ namespace logparser
         static void Main(string[] args)
         {
             Console.WriteLine("Starting Log Parser at " + DateTime.Now.ToShortDateString());
-            args = new string[] { "-d", @"G:\Servers_IISLog", "-a", "hitcount" };
+            args = new string[] { "-d", @"F:\Work\Projects\DotNet\logparser\files\P2P", "-a", "clientipcount" };
 
             string[] arguments = Environment.GetCommandLineArgs();
             if (arguments.Length == 1 && helpRequired(arguments[0]))
@@ -50,8 +50,9 @@ namespace logparser
             Console.WriteLine("errcount (get bifurcation of errors based on status code)");
             Console.WriteLine("hitcount (get count of requests for each application within the site)");
             Console.WriteLine("hitcountbyip (get count of requests from a particular ip");
-            Console.WriteLine("hitcountbyip (get count of requests from a particular ip");
+            Console.WriteLine("clientipcount (get count of requests from a particular ip");
             Console.WriteLine("densityperhr (get count of requests for each application per hour)");
+            Console.WriteLine("responsestats (get count of requests for each application per hour)");
             //Console.WriteLine("-a (action to be carried out)");
             //Console.WriteLine("-a (action to be carried out)");
             //Console.WriteLine("-a (action to be carried out)");
